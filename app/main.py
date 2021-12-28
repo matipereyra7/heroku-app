@@ -8,5 +8,5 @@ def index():
     return "<h1>Welcome to CodingX</h1>"
 
 @app.route('/hi')
-def index():
+def hello_world():
     return "<h1>Hello World!</h1>"
