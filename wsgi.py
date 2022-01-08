@@ -1,6 +1,9 @@
-from src.api.main import app
+from flask import Flask
 
-# This file is the entry point for the application
+app = Flask(__name__)
+
+# Import controllers
+from src.api.crud.controller import *
 
 if __name__ == "__main__":
-  app.run()
+    app.run()
