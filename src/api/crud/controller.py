@@ -7,6 +7,11 @@ def index():
     return "<h1>Welcome to CodingX</h1>"
 
 
+@app.route('/ping')
+def ping_pong():
+    return "pong"
+
+
 @app.route('/hi')
 def hello_world():
     return "<h1>Hello World!</h1>"
